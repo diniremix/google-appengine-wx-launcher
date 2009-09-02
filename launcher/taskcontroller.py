@@ -82,10 +82,11 @@ class TaskController(object):
       cmd = None
       err = ""
       try:
-        cmd = self._runtime.DevAppServerCommand(project,
-                                                extra_flags=extra_flags)
         if self._FindThreadForProject(project):
           logging.warning('Already running a task for %s!' % project.path)
+        else:
+          cmd = self._runtime.DevAppServerCommand(project,
+                                                  extra_flags=extra_flags)
       except launcher.RuntimeException, r:
         err = r.message
       if not cmd or err:
