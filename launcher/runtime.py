@@ -122,7 +122,6 @@ class Runtime(object):
                                dev_appserver)
     command = ([python_path,
                 dev_appserver,
-               '--admin_console_server=',
                '--port=%s' % project.port] +
                project.flags +
                (extra_flags or []) +
@@ -149,8 +148,7 @@ class Runtime(object):
     command = [python_path,
                os.path.join(sdk_root_path, 'appcfg.py'),
                '--no_cookies',
-               '--email=%s' % authname,
-               '--passin']
+               '--email=%s' % authname]
     if server:
       command.append('--server=%s' % server)
     command += ('update', project.path)
