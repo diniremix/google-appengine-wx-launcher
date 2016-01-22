@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Google App Engine Launcher
+GenericName=Google App Engine Launcher
+Comment=Google App Engine Launcher
+Exec=/home/diniremix/bin/google-appengine-wx-launcher/GoogleAppEngineLauncher.py
+Terminal=false
+MimeType=text/plain;
+Icon=/home/diniremix/bin/google-appengine-wx-launcher/help/appicon.png
+Categories=Network;Development;
+StartupNotify=true
