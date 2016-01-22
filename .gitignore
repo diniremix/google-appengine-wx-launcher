@@ -1,0 +1,36 @@
+.idea
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+.project
+.directory
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+.apdisk
+
+# Windows image file caches
+[Tt]humbs.db
+ehthumbs.db
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+
+# Sqlite extension files
+*.sqlite
+*.db
+# another files
+*.sublime-workspace
+*.pyc
+*.pyd
+*.rar
+*.tar
+*.tar.gz
