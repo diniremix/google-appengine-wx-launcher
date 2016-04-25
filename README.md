@@ -38,6 +38,12 @@ On Linux, you need most of the same things as windows (of course, you won't need
 sudo apt-get install python-wxversion python-wxglade
 ```
 
+## Instal Requeriments (Fedora based)
+download [wxPython 2.8.x from here](https://apps.fedoraproject.org/packages/wxPython) 
+```bash
+sudo dnf install /path/to/wxPython-2.8.x.x-x.x.x_x.rpm
+```
+
 
 ## How to use
 Clone this repo.
@@ -48,9 +54,23 @@ Clone this repo.
 >Addtional we are used a [.desktop file](http://standards.freedesktop.org/desktop-entry-spec/latest) for launch the app, by defaul please App Engine Launcher are installed in **~/bin** folder, please edit if path are changed
 
 
+
 ## Changelog
 
 - fixed for Google app engine **1.9.24**  see commit [4bb5599](https://github.com/diniremix/google-appengine-wx-launcher/commit/4bb5599) 
+
+
+## Issues
+some parameters for each pojects:
+```ini
+--skip_sdk_update_check
+--skip_sdk_update_check=yes (if the above do not work)
+--disable_update_check (for old versions)
+```
+in php projects some parameters:
+```ini
+--php_executable_path=/path/to/php/php-cgi
+```
 
 
 ### Contact
